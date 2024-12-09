@@ -64,8 +64,3 @@ The raycasting technique works by:
 - [ ] Optimize rendering performance
 - [ ] Add minimap feature and imgui level editor
 - [ ] Implement basic gameplay elements
-
-## 📚 Resources
-
-- [Wolfenstein 3D's source code](https://github.com/id-Software/wolf3d)
-- [Raycasting tutorial references will be added]# Wolfenstein-Style Raycasting Engine
