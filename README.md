@@ -8,7 +8,9 @@ This project demonstrates the fundamental principles of early 3D game developmen
 
 ## 🎮 Project Overview
 
-This project aims to recreate the groundbreaking pseudo-3D graphics technique used in Wolfenstein 3D (1992). Using raycasting, the engine creates a 3D perspective from a 2D map, similar to how id Software revolutionized first-person gaming.
+This project aims to recreate the groundbreaking pseudo-3D graphics technique used in Wolfenstein 3D (1992).
+
+Using raycasting, the engine creates a 3D perspective from a 2D map, similar to how id Software revolutionized first-person gaming.
 
 ### Key Features
 
