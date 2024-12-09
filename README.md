@@ -23,7 +23,7 @@ This project aims to recreate the groundbreaking pseudo-3D graphics technique us
 
 - Language: C
 - Graphics Library: [To be determined - e.g., SDL2, OpenGL]
-- Build System: [To be determined - e.g.,Make, CMake if a choose to do cross-compatibility]
+- Build System: [Make, CMake if a choose to do cross-compatibility]
 - Platform: linux-based, maybe Cross-platform
 
 ## 🚀 Getting Started
