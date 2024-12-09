@@ -2,7 +2,9 @@
 
 ## Wolfenstein-Style Raycasting Engine
 
-A recreation of the classic Wolfenstein 3D rendering technique using raycasting, implemented in C. This project demonstrates the fundamental principles of early 3D game development and computer graphics.
+A recreation of the classic Wolfenstein 3D rendering technique using raycasting, implemented in C.
+
+This project demonstrates the fundamental principles of early 3D game development and computer graphics.
 
 ## 🎮 Project Overview
 
