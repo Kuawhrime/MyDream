@@ -65,10 +65,6 @@ The raycasting technique works by:
 - [ ] Add minimap feature and imgui level editor
 - [ ] Implement basic gameplay elements
 
-## 📜 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
 ## 📚 Resources
 
 - [Wolfenstein 3D's source code](https://github.com/id-Software/wolf3d)
