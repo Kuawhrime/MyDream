@@ -24,7 +24,7 @@ Using raycasting, the engine creates a 3D perspective from a 2D map, similar to 
 ## 🛠️ Technical Stack
 
 - Language: C
-- Graphics Library: [To be determined - e.g., SDL2, OpenGL]
+- Graphics Library: [SDL2, OpenGL]
 - Build System: [Make, CMake if a choose to do cross-compatibility]
 - Platform: linux-based, maybe Cross-platform
 
