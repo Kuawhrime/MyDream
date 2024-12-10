@@ -25,28 +25,8 @@ Using raycasting, the engine creates a 3D perspective from a 2D map, similar to 
 
 - Language: C
 - Graphics Library: [SDL2, OpenGL]
-- Build System: [Make, CMake if a choose to do cross-compatibility]
+- Build System: [Make, CMake if i choose to do cross-compatibility]
 - Platform: linux-based, maybe Cross-platform
-
-## 🚀 Getting Started
-
-### Prerequisites
-
-```bash
-# Required dependencies will be listed here
-```
-
-### Building the Project
-
-```bash
-# Build instructions will be added
-```
-
-### Running the Game
-
-```bash
-# Execution instructions will be added
-```
 
 ## 🎯 Implementation Details
 
