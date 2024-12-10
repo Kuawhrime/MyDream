@@ -1,4 +1,4 @@
-# MY_DREAM
+# MyDream
 
 ## Wolfenstein-Style Raycasting Engine
 
