@@ -1,6 +1,6 @@
 ##
 ## EPITECH PROJECT, 2025
-## Untitled (Workspace)
+## MyDream
 ## File description:
 ## Makefile
 ##
@@ -11,35 +11,34 @@ CC	=	gcc
 
 RM	=	rm -f
 
-SRCDIR	=	src/
+SRCS	=	src/enemy.c \
+		src/enemy_render.c \
+		src/enemy_update.c \
+		src/engine.c \
+		src/engine_ray.c \
+		src/game.c \
+		src/main.c \
+		src/map.c \
+		src/map_editor.c \
+		src/menu.c \
+		src/player.c \
+		src/sound.c \
+		src/text.c \
+		src/weapon.c
 
-SRCS	=	$(wildcard $(SRCDIR)*.c)
-
-OBJDIR	=	obj/
-
-OBJS	=	$(SRCS:$(SRCDIR)%.c=$(OBJDIR)%.o)
-
-CFLAGS	=	-I./Include -Wall -Wextra -g
+CFLAGS	=	-I./Include -Wall -Wextra
 
 LDFLAGS	=	-lSDL2 -lSDL2_image -lm -lSDL2_ttf -lSDL2_mixer
 
-all:	$(OBJDIR) $(NAME)
+all:	$(NAME)
 
-$(OBJDIR):
-	mkdir -p $(OBJDIR)
-
-$(OBJDIR)%.o:	$(SRCDIR)%.c
-	$(CC) $(CFLAGS) -c $< -o $@
-
-$(NAME):	$(OBJS)
-	$(CC) $(OBJS) -o $(NAME) $(LDFLAGS)
+$(NAME):
+	$(CC) $(SRCS) -o $(NAME) $(CFLAGS) $(LDFLAGS)
 
 clean:
-	$(RM) $(OBJS)
-	$(RM) -r $(OBJDIR)
+	$(RM) $(NAME)
 
 fclean:	clean
-	$(RM) $(NAME)
 
 re:	fclean all
 
