@@ -1,34 +1,52 @@
 ##
-## KORO PROJECT, 2024
-## MyDream
+## EPITECH PROJECT, 2025
+## Untitled (Workspace)
 ## File description:
 ## Makefile
 ##
 
-NAME = mydream
+NAME	=	mydream
 
-SRC = src/main.c \
-      src/ray.c\
-	  src/window.c\
-	  src/movement.c\
-	  src/debug.c\
+CC	=	gcc
 
-OBJ = $(SRC:.c=.o)
+RM	=	rm -f
 
-CFLAGS = -Wall -Wextra -Imodule
-LDFLAGS = -lSDL2 -lm
+SRCDIR	=	src/
 
-all: $(NAME)
+SRCS	=	$(wildcard $(SRCDIR)*.c)
 
-$(NAME): $(OBJ)
-	gcc -o $(NAME) $(OBJ) $(LDFLAGS)
+OBJDIR	=	obj/
+
+OBJS	=	$(SRCS:$(SRCDIR)%.c=$(OBJDIR)%.o)
+
+CFLAGS	=	-I./Include -Wall -Wextra -g
+
+LDFLAGS	=	-lSDL2 -lSDL2_image -lm -lSDL2_ttf -lSDL2_mixer
+
+all:	$(OBJDIR) $(NAME)
+
+$(OBJDIR):
+	mkdir -p $(OBJDIR)
+
+$(OBJDIR)%.o:	$(SRCDIR)%.c
+	$(CC) $(CFLAGS) -c $< -o $@
+
+$(NAME):	$(OBJS)
+	$(CC) $(OBJS) -o $(NAME) $(LDFLAGS)
 
 clean:
-	rm -f $(OBJ)
+	$(RM) $(OBJS)
+	$(RM) -r $(OBJDIR)
 
-fclean: clean
-	rm -f $(NAME)
+fclean:	clean
+	$(RM) $(NAME)
 
-re: fclean all
+re:	fclean all
 
-.PHONY: all clean fclean re
+debug: CFLAGS += -g
+debug: re
+
+run: all
+	./$(NAME)
+
+.PHONY: all clean fclean re debug run
